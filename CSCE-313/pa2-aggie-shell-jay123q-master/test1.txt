@@ -1,0 +1,100 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   1744  1080 ?        Sl   20:01   0:00 /init
+root        10  0.0  0.0   1764    68 ?        Ss   20:01   0:00 /init
+root        11  0.0  0.0   1764    84 ?        S    20:01   0:00 /init
+jay123q     12  0.0  0.0   2612   532 pts/0    Ss+  20:01   0:00 sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" 30d9c6cd9483b2cc586687151bcbcd635f373630 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=3023621895-3598193204-1308142819-732900319 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+jay123q     13  0.0  0.0   2612   588 pts/0    S+   20:01   0:00 sh /mnt/c/Users/Owner/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3/scripts/wslServer.sh 30d9c6cd9483b2cc586687151bcbcd635f373630 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=3023621895-3598193204-1308142819-732900319 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+jay123q     18  0.0  0.0   2612   524 pts/0    S+   20:01   0:00 sh /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/code-server --host=127.0.0.1 --port=0 --connection-token=3023621895-3598193204-1308142819-732900319 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+jay123q     22  0.1  0.5 939940 80324 pts/0    Sl+  20:01   0:18 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=3023621895-3598193204-1308142819-732900319 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+root        33  0.0  0.0   1764    68 ?        Ss   20:01   0:00 /init
+root        34  0.0  0.0   1764    84 ?        S    20:01   0:01 /init
+jay123q     35  0.0  0.3 587680 44472 pts/1    Ssl+ 20:01   0:03 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 44827 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+jay123q     42  0.1  0.4 946336 64192 pts/0    Sl+  20:01   0:21 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/out/bootstrap-fork --type=ptyHost
+root        71  0.0  0.0   1764    68 ?        Ss   20:01   0:00 /init
+root        72  0.0  0.0   1764    84 ?        S    20:01   0:05 /init
+jay123q     73  0.0  0.3 595356 52280 pts/2    Ssl+ 20:01   0:11 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node -e  const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 44827 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+jay123q     81  0.7  1.5 1089468 227912 pts/0  Sl+  20:01   1:30 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+jay123q     92  0.0  0.3 834028 47508 pts/0    Sl+  20:01   0:03 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/out/bootstrap-fork --type=fileWatcher
+jay123q    106  0.0  0.0  10008  5052 pts/3    Ss   20:01   0:00 /bin/bash
+jay123q    172  0.0  0.3 588904 45640 pts/0    Sl+  20:01   0:00 /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /home/jay123q/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=81
+jay123q    180  0.3  0.5 1606136 78012 pts/0   Sl+  20:01   0:38 /home/jay123q/.vscode-server/extensions/ms-vscode.cpptools-1.10.7-linux-x64/bin/cpptools
+jay123q    207  0.0  0.0   2616   592 pts/0    S+   20:01   0:00 /bin/sh -c "/home/jay123q/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5625/dotnet_modules/vsls-agent" --autoexit --enableRpcInitialize --pipe vscode.58818338fe72ca85e234a1ab8610aec2 --service https://prod.liveshare.vsengsaas.visualstudio.com/ --signalRServiceUri https://signlr-prod.core.vsengsaas.visualstudio.com/api/signalr/signalrhub --agentExtensionPath "/home/jay123q/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5625/dotnet_modules/Microsoft.VisualStudio.LiveShare.Agent.PresenceService.dll"
+jay123q    208  0.0  0.6 3401592 85644 pts/0   Sl+  20:01   0:04 /home/jay123q/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5625/dotnet_modules/vsls-agent --autoexit --enableRpcInitialize --pipe vscode.58818338fe72ca85e234a1ab8610aec2 --service https://prod.liveshare.vsengsaas.visualstudio.com/ --signalRServiceUri https://signlr-prod.core.vsengsaas.visualstudio.com/api/signalr/signalrhub --agentExtensionPath /home/jay123q/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5625/dotnet_modules/Microsoft.VisualStudio.LiveShare.Agent.PresenceService.dll
+jay123q    554  0.0  0.0 21474914196 12328 pts/3 T  22:46   0:00 ./shell
+jay123q   1351  0.0  0.0 21474914168 7744 pts/3 T   21:05   0:00 ./shell
+jay123q   1409  0.0  0.0 21474914168 13760 pts/3 T  21:06   0:00 ./shell
+jay123q   2514  0.0  0.0 21474914168 7804 pts/3 T   21:12   0:00 ./shell
+jay123q   2558  0.0  0.0 21474914196 8184 pts/3 T   22:48   0:00 ./shell
+jay123q   3025  0.0  0.0 21474914172 13752 pts/3 T  21:14   0:00 ./shell
+jay123q   4031  0.0  0.0 21474914172 13992 pts/3 T  21:56   0:00 ./shell
+jay123q   4214  0.0  0.0  10008  5068 pts/6    Ss   22:49   0:00 /usr/bin/bash
+jay123q   4248  0.0  0.0 21474914172 8048 pts/3 T   21:58   0:00 ./shell
+jay123q   4438  0.0  0.0   7244   584 pts/3    T    21:58   0:00 head -10
+jay123q   4504  0.0  0.1  35388 22360 pts/3    T    22:49   0:00 gdb
+jay123q   5130  0.0  0.9 155912 138216 pts/3   T    22:49   0:00 gdb ./shell
+jay123q   5132  0.0  0.0 21474914196 8260 pts/3 t   22:50   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   5138  0.0  0.0 21474914180 8040 pts/3 T   22:00   0:00 ./shell
+jay123q   5155  0.0  0.0   8168   720 pts/3    T    22:00   0:00 grep --color=auto shell.cpp
+jay123q   5367  0.0  0.0 21474914180 8024 pts/3 T   22:01   0:00 ./shell
+jay123q   5442  0.0  0.0   8168   720 pts/3    T    22:01   0:00 grep --color=auto shell.cpp
+jay123q   6440  0.0  0.0 21474914196 4192 pts/3 T   22:50   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   6783  0.0  0.0 21474914180 7940 pts/3 T   22:04   0:00 ./shell
+jay123q   6809  0.0  0.0   8168   652 pts/3    T    22:04   0:00 grep --color=auto shell.cpp
+jay123q   6876  0.0  0.0 21474914196 6224 pts/3 T   22:50   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   7211  0.0  0.9 155892 137872 pts/3   T    22:06   0:00 gdb ./shell
+jay123q   7290  0.0  0.0 21474914180 8076 pts/3 t   22:06   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   7383  0.0  0.0   8168   652 pts/3    T    22:06   0:00 grep --color=auto ./shell
+jay123q   7889  0.0  0.0 21474914192 8144 pts/3 T   22:08   0:00 ./shell
+jay123q   7891  0.0  0.0   8168   656 pts/3    T    22:08   0:00 grep --color=auto ./shell
+jay123q   8083  0.0  0.1 21474914200 17680 pts/3 T  22:09   0:00 ./shell -l
+jay123q   8084  0.0  0.0   8168   712 pts/3    T    22:09   0:00 grep --color=auto ./shell
+jay123q   8230  0.0  0.0 21474914200 8084 pts/3 T   22:09   0:00 ./shell
+jay123q   8326  0.0  0.5  93960 80208 pts/3    T    22:55   0:00 gdb ./shell
+jay123q   8383  0.0  0.0   8168   656 pts/3    T    22:09   0:00 grep --color=auto ./shell
+jay123q   8408  0.0  0.0 21474914228 10332 pts/3 t  22:55   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   8755  0.0  0.0 21474914200 9992 pts/3 T   22:11   0:00 ./shell
+jay123q   8838  0.0  0.0   8168   720 pts/3    T    22:11   0:00 grep --color=auto ./shell
+jay123q   9111  0.0  0.9 155888 137652 pts/3   T    22:13   0:00 gdb ./shell
+jay123q   9113  0.0  0.0 21474914200 8100 pts/3 t   22:13   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q   9479  0.0  0.0      0     0 pts/3    Z    22:13   0:00 [grep] <defunct>
+jay123q  10988  0.0  0.1  39524 26840 pts/3    T    22:15   0:00 gdb ./shell
+jay123q  12324  0.0  0.1  35392 22256 pts/3    T    22:17   0:00 gdb ./shel
+jay123q  12524  0.0  0.9 155892 138256 pts/3   T    22:17   0:00 gdb ./shell
+jay123q  12628  0.0  0.0 21474914200 8088 pts/3 t   22:18   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  12738  0.0  0.0   8168   652 pts/3    T    22:18   0:00 grep --color=auto shell.cpp
+jay123q  12957  0.0  0.0 21474914228 8276 pts/3 T   23:00   0:00 ./shell
+jay123q  13457  0.0  0.5  93952 80428 pts/3    T    22:20   0:00 gdb ./shell
+jay123q  13501  0.0  0.1 21474914200 16116 pts/3 t  22:20   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  13576  0.0  0.0      0     0 pts/3    Z    22:20   0:00 [ls] <defunct>
+jay123q  13577  0.0  0.0   8168   652 pts/3    T    22:20   0:00 grep --color=auto ./shell
+jay123q  14136  0.0  0.9 155928 138424 pts/3   T    22:22   0:00 gdb ./shell
+jay123q  14184  0.0  0.0 21474914200 10144 pts/3 t  22:22   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  14520  0.0  0.0   8168   652 pts/3    T    22:22   0:00 grep --color=auto ./shell
+jay123q  15503  0.0  0.9 155896 137824 pts/3   T    22:23   0:00 gdb ./shell
+jay123q  15616  0.0  0.0 21474914200 10144 pts/3 t  22:23   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  15780  0.0  0.0   8168   652 pts/3    T    22:23   0:00 grep --color=auto ./shell
+jay123q  16333  0.0  0.9 155908 138384 pts/3   T    22:24   0:00 gdb ./shell
+jay123q  16479  0.0  0.0 21474914200 10132 pts/3 t  22:24   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  16551  0.0  0.0 21474914180 7512 pts/3 T   23:10   0:00 ./shell
+jay123q  16628  0.0  0.0      0     0 pts/3    Z    22:24   0:00 [grep] <defunct>
+jay123q  17557  0.0  0.9 155936 137804 pts/3   T    22:25   0:00 gdb ./shell
+jay123q  17573  0.0  0.0 21474914200 10144 pts/3 t  22:25   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  17735  0.0  0.0      0     0 pts/3    Z    22:25   0:00 [grep] <defunct>
+jay123q  18918  0.0  0.9 155896 138252 pts/3   T    22:28   0:00 gdb ./shell
+jay123q  18920  0.0  0.0 21474914200 10140 pts/3 t  22:28   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  19090  0.0  0.0      0     0 pts/3    Z    22:28   0:00 [grep] <defunct>
+jay123q  20800  0.0  0.9 155900 137772 pts/3   T    22:31   0:00 gdb ./shell
+jay123q  20817  0.0  0.0 21474914196 10132 pts/3 t  22:31   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  20993  0.0  0.0      0     0 pts/3    Z    22:31   0:00 [grep] <defunct>
+jay123q  21919  0.0  0.0 21474914180 8292 pts/3 T   23:13   0:00 ./shell
+jay123q  22256  0.0  0.1 21474914196 17064 pts/3 T  22:33   0:00 ./shell
+jay123q  24530  0.0  0.9 155912 138516 pts/3   T    22:35   0:00 gdb ./shell
+jay123q  24712  0.0  0.0 21474914192 10136 pts/3 t  22:35   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  24900  0.0  0.0      0     0 pts/3    Z    22:35   0:00 [grep] <defunct>
+jay123q  26486  0.0  0.9 155912 138592 pts/3   T    22:36   0:00 gdb ./shell
+jay123q  26488  0.0  0.0 21474914192 10132 pts/3 t  22:36   0:00 /home/jay123q/github-classroom/CSCE313-SU22-Tyagi/pa2-aggie-shell-jay123q/shell
+jay123q  26689  0.0  0.0      0     0 pts/3    Z    22:36   0:00 [grep] <defunct>
+jay123q  27160  0.1  0.4 5098436 68784 pts/0   Sl+  23:15   0:00 /home/jay123q/.vscode-server/extensions/ms-vscode.cpptools-1.10.7-linux-x64/bin/cpptools-srv 180 {3DDCD293-F5B5-42AA-B7B7-9A3911B6EA2B}
+jay123q  27879  0.0  0.0 21474914168 8212 pts/3 S+  23:15   0:00 ./shell
+jay123q  29363  0.0  0.0  10616  3328 pts/6    R+   23:16   0:00 ps aux
+jay123q  30386  0.0  0.0 21474914196 11804 pts/3 T  22:45   0:00 ./shell
