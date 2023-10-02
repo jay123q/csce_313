@@ -62,7 +62,8 @@ void combineProcess(int& in, int& out, Tokenizer& tknr)
 
         if (tknr.commands.size() - 1 == i && !hasOutput)
         {
-            out = 1;
+            dup2(1, out);
+            // out = 1;
         }
         else
         {
@@ -97,13 +98,13 @@ void combineProcess(int& in, int& out, Tokenizer& tknr)
                 out = open(tknr.commands[i]->out_file.c_str(), O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
                 if (out == -1)
                 { // no redirect
-                    perror("cum_chalice 1");
+                    perror(" open broke in line 100, hasOutput ");
                     exit(1);
                 }
                 int out_dup = dup2(out, STDOUT_FILENO);
                 if (out_dup == -1)
                 {
-                    perror("dup2");
+                    perror(" dup2 broke in line 106, hasOutput ");
                     exit(1);
                 }
             }
@@ -117,13 +118,13 @@ void combineProcess(int& in, int& out, Tokenizer& tknr)
                 in = open(tknr.commands[i]->in_file.c_str(), O_RDONLY);
                 if (in == -1)
                 { // no redirect
-                    perror("congitive behavioral therapy 1");
+                    perror(" in broke in line 120, hasInput ");
                     exit(1);
                 }
                 int in_dup = dup2(in, STDIN_FILENO);
                 if (in_dup == -1)
                 {
-                    perror("dup2");
+                    perror(" dup2 broke in line 126, hasInput ");
                     exit(1);
                 }
             }
@@ -203,7 +204,20 @@ int main()
         { // continue to next prompt if input had an error
             continue;
         }
+        // this will handle greps
+        // if (tknr.commands.size() > 1)
+        // {
+        //     cout << " single baby \n ";
+        //     process_single(in, out, tknr);
+        // }
+        // else
+        // {
+        //     // this handles cd, ls, and cat
+        //     cout << " multiple hunny baby \n ";
+        //     process_chunk(in, out, tknr, PID);
+        // }
 
+        // cout << " is the correc things running \n";
         combineProcess(in, out, tknr);
     }
 
