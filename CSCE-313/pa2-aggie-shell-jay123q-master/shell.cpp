@@ -319,7 +319,11 @@ void process_chunk(int &in, int &out, Tokenizer &token, vector<pid_t> &PID)
         cmd1[j] = (char *)(current_command->args.at(j).c_str());
     }
     cmd1[current_command->args.size()] = nullptr;
+
+
     process_command(in, out, current_command, cmd1, PID);
+
+    
     delete[] cmd1;
 }
 void process_single(int &in, int &out, Tokenizer &tknr)
@@ -403,16 +407,21 @@ int main()
         { // continue to next prompt if input had an error
             continue;
         }
-        // see if the out isnot 1. if it is end
-        if (tknr.commands.size() > 1)
-        {
-            process_single(in, out, tknr);
-        }
-        else
-        {
+        // // see if the out isnot 1. if it is end
+        // if (tknr.commands.size() > 1)
+        // {
+        //     process_single(in, out, tknr);
+        // }
+        // else
+        // {
+        //     // cout << " is the correc things running \n";
+        //     process_chunk(in, out, tknr, PID);
+        // }        
+
+
             // cout << " is the correc things running \n";
             process_chunk(in, out, tknr, PID);
-        }
+    
     }
 
     dup2(1, out);
